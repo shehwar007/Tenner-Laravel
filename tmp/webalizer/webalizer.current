@@ -1,0 +1,357 @@
+# Webalizer V2.23-08 Incremental Data - 03/12/2024 08:55:00
+2024 3 12 8 55 0
+135 75 46 2 7 36 610361 46 44 0
+5 3 13 1 12
+14 8 74622 4 5 4
+11 6 801 4 4 4
+9 4 925 6 4 4
+6 4 0 3 2 2
+17 10 216 8 7 7
+11 7 0 5 4 4
+8 5 0 4 3 3
+16 10 110 7 6 6
+9 4 50441 7 2 2
+6 4 0 3 2 2
+6 4 0 3 2 2
+22 9 483246 5 5 4
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+11 6 49732 3
+18 5 484554 3
+0 0 0 0
+10 5 74512 4
+2 1 0 1
+0 0 0 0
+6 4 110 2
+3 2 0 1
+12 8 0 4
+0 0 0 0
+4 1 216 3
+10 6 801 3
+6 4 0 2
+6 4 0 2
+0 0 0 0
+11 5 216 6
+3 2 0 1
+4 3 110 1
+0 0 0 0
+0 0 0 0
+7 5 110 2
+16 10 0 6
+0 0 0 0
+6 4 0 2
+0
+0
+0
+75
+0
+0
+0
+0
+0
+0
+0
+44
+0
+0
+0
+0
+2
+0
+4
+0
+0
+10
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/robots.txt
+0 6 7017784929755934000 643 0 0
+/wp-cron.php
+0 69 3760788263342702592 0 0 0
+# End Of Table - urls
+# -sites- (monthly)
+n178-18-10-h90.otr-rsk.metromax.ru
+0 1 0 0 1 1709727463
+-
+181.215.176.119
+0 1 0 0 1 1710233700
+-
+srv1.hostingwebsite.eu
+0 1 0 709 0 0
+-
+cp04.brain.net.pk
+0 1 0 709 0 0
+-
+static.110.67.76.144.clients.your-server.de
+0 2 1 110 1 1709313523
+-
+business500.mypowerfulserver.com
+0 69 69 0 0 0
+-
+boober.shop
+0 1 0 0 1 1709647095
+-
+ec2-44-234-145-153.us-west-2.compute.amazonaws.com
+0 1 0 0 1 1710141789
+-
+81.181.56.110
+0 1 0 0 1 1709636344
+-
+159.65.234.151
+0 1 0 0 1 1710059141
+-
+192.36.109.90
+0 1 0 0 1 1709942835
+-
+8.41.221.59
+0 3 1 110 1 1710225030
+-
+ec2-18-226-186-157.us-east-2.compute.amazonaws.com
+0 1 0 0 1 1710101307
+-
+139.59.9.56
+0 1 0 0 1 1709601143
+-
+undefined.hostname.localhost
+0 1 0 0 1 1709456020
+-
+192.36.109.75
+0 1 1 110 0 0
+-
+117.205.252.52
+0 1 0 108 1 1709636173
+-
+142.93.173.163
+0 1 0 0 1 1709940179
+-
+crawl-149-56-150-186.dataproviderbot.com
+0 1 0 0 1 1710205496
+-
+192.36.109.86
+0 1 0 24811 0 0
+-
+ec2-34-214-76-253.us-west-2.compute.amazonaws.com
+0 1 0 0 1 1709738016
+-
+ec2-52-13-51-116.us-west-2.compute.amazonaws.com
+0 1 0 0 1 1709913200
+-
+r-20-49-62-5.consumer-pool.prcdn.net
+0 2 0 0 2 1709413833
+-
+192.36.109.117
+0 1 0 24811 0 0
+-
+crawl-66-249-64-234.googlebot.com
+0 3 1 801 1 1709379894
+-
+ec2-44-205-2-62.compute-1.amazonaws.com
+0 1 0 0 1 1709299182
+-
+ec2-18-200-248-202.eu-west-1.compute.amazonaws.com
+0 2 1 110 1 1709931255
+-
+77.86.208.35.bc.googleusercontent.com
+0 5 1 74512 2 1709264866
+-
+host-156.209.245.134-static.tedata.net
+0 1 0 108 1 1709481144
+-
+unn-87-249-132-166.datapacket.com
+0 1 0 0 1 1709714416
+-
+49.47.233.75
+0 1 0 108 1 1709481135
+-
+ec2-3-249-111-54.eu-west-1.compute.amazonaws.com
+0 1 0 0 1 1709586480
+-
+ec2-52-34-46-213.us-west-2.compute.amazonaws.com
+0 1 0 0 1 1709913211
+-
+116.212.135.239
+0 1 0 0 1 1709868360
+-
+164.92.75.210
+0 1 0 0 1 1709424444
+-
+58.53.218.148
+0 3 0 0 3 1710001732
+-
+142.93.186.229
+0 1 0 0 1 1710117496
+-
+host-169-233.faznet.co.id
+0 1 0 108 1 1709636176
+-
+crawl-66-249-64-224.googlebot.com
+0 1 0 0 1 1709380610
+-
+64.227.111.135
+0 1 0 0 1 1709813545
+-
+dynamic.claro.com.sv
+0 1 0 0 1 1709682702
+-
+ec2-34-220-129-108.us-west-2.compute.amazonaws.com
+0 1 0 0 1 1709931940
+-
+209.38.166.227
+0 1 0 0 1 1709784302
+-
+unn-37-19-223-214.datapacket.com
+0 1 0 0 1 1709674052
+-
+crawl-149-56-160-176.dataproviderbot.com
+0 9 0 483136 1 1710205468
+-
+ec2-35-92-67-78.us-west-2.compute.amazonaws.com
+0 1 0 0 1 1709566672
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+181.215.176.119
+0 1 0 0 1 1710233700
+-
+business500.mypowerfulserver.com
+0 8 8 0 0 0
+-
+8.41.221.59
+0 3 1 110 1 1710225030
+-
+crawl-149-56-150-186.dataproviderbot.com
+0 1 0 0 1 1710205496
+-
+crawl-149-56-160-176.dataproviderbot.com
+0 9 0 483136 1 1710205468
+-
+# End Of Table - sites (daily)
+# -referrers- 
+http://envobyte.dev/
+0 5
+http://www.envobyte.dev/.well-known/security.txt
+0 1
+- (Direct Request)
+0 125
+http://www.envobyte.dev/humans.txt
+0 1
+http://envobyte.dev
+0 1
+http://www.envobyte.dev/security.txt
+0 1
+http://www.envobyte.dev/ads.txt
+0 1
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.
+0 1
+Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+0 1
+Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/95.0
+0 1
+Mozilla/5.0 (compatible; Dataprovider.com)
+0 10
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+0 1
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 2
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36 Edg/89.0.7
+0 1
+curl/8.3.0
+0 1
+Googlebot-Image/1.0
+0 1
+WordPress/6.4.3; https://envobyte.dev
+0 69
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36 Kinza/4.7.2
+0 1
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+0 4
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+0 1
+python-requests/2.25.1
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36
+0 1
+Mozilla/5.0 (Linux; Android 9; BDL8051C Build/BDL3552T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.33
+0 4
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+0 3
+Pandalytics/1.0 (https://domainsbot.com/pandalytics/)
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; BW/1.1; bit.ly/3eZNDnO; 4bc6cfeb
+0 5
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+0 2
+Opera/9.80 (Windows NT 6.1) Presto/2.12.388 Version/12.12
+0 1
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0
+0 1
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36 OPR/54.0.29
+0 1
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+0 1
+serpstatbot/2.1 (advanced backlink tracking bot; https://serpstatbot.com/; abuse@serpstatbot.com)
+0 2
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.139 Mobile
+0 1
+Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36
+0 1
+Mozilla/5.0 Firefox/33.0
+0 2
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+0 5
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

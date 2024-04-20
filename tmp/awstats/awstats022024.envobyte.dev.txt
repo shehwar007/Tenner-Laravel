@@ -1,0 +1,344 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202402 will be lost/reset.
+# Last config file used to build this data file was /home2/envobyte/tmp/awstats/awstats.envobyte.dev.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2684                
+POS_VISITOR 8420                
+POS_DAY 8673                
+POS_DOMAIN 3257                
+POS_LOGIN 3513                
+POS_ROBOT 3668                
+POS_WORMS 3908                
+POS_EMAILSENDER 4039                
+POS_EMAILRECEIVER 4182                
+POS_SESSION 9205                
+POS_SIDER 9411                
+POS_FILETYPES 4317                
+POS_DOWNLOADS 4427                
+POS_OS 4475                
+POS_BROWSER 4566                
+POS_SCREENSIZE 4655                
+POS_UNKNOWNREFERER 4729                
+POS_UNKNOWNREFERERBROWSER 5010                
+POS_ORIGIN 5183                
+POS_SEREFERRALS 5317                
+POS_PAGEREFS 5461                
+POS_SEARCHWORDS 5609                
+POS_KEYWORDS 5761                
+POS_MISC 2348                
+POS_ERRORS 5820                
+POS_CLUSTER 3369                
+POS_SIDER_404 5954                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20240301034744 4 524 10200127579391
+FirstTime 20240201085804
+LastTime 20240229233916
+LastUpdate 20240301122010 4 0 3 0 0
+TotalVisits 98                  
+TotalUnique 5                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 5                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 20 20 0 10 10 0
+1 5 5 0 4 4 709
+2 16 16 0 38 38 3145930
+3 13 13 0 13 15 1089222
+4 8 8 0 4 4 0
+5 11 11 0 8 19 533555
+6 9 9 0 5 5 120784
+7 11 11 0 7 8 784
+8 2 2 0 2 2 0
+9 2 2 0 2 2 108
+10 6 6 0 3 3 0
+11 6 6 0 4 4 0
+12 6 6 0 3 6 49709
+13 3 3 0 2 4 93
+14 10 10 0 6 6 0
+15 16 16 0 9 12 49725
+16 13 13 0 8 9 802
+17 10 10 0 5 9 49709
+18 6 6 0 5 5 242277
+19 8 8 0 4 4 0
+20 6 6 0 3 6 49709
+21 16 16 773 3 3 0
+22 5 5 0 3 5 121586
+23 22 22 0 20 21 247996
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 4
+de 226 226 512
+us 2 2 174
+zz 1 1 87
+il 1 1 0
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 3
+unknown 5 550 20240227170311 5
+Googlebot/ 4 372 20240209035520 4
+bot[\s_+:,\.\;\/\\-] 1 93 20240226222024 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 3
+php 218 0 0 0
+Unknown 11 773 0 0
+html 1 0 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 2
+Unknown 229 229
+win10 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 3
+mozilla 3 3
+Unknown 226 226
+edge12 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+Cpanel-HTTP-Client/1.0 20240209211749
+WordPress/6.4.3;_https://envobyte.dev 20240229233916
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20240209213151
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+Cpanel-HTTP-Client/1.0 20240209211749
+WordPress/6.4.3;_https://envobyte.dev 20240229233916
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 230 230
+From1 0 0
+From2 0 0
+From3 0 0
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+401 1 108
+307 6 4254
+404 63 5689720
+301 113 0
+406 11 7601
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 52
+/.ftpsync.setting 1 -
+/wp-content/plugins/ultimate-member/assets/css/common.css 1 envobyte.dev
+/wp-content/plugins.php 1 envobyte.dev
+/wp-includes/rest-api/plugins.php 1 envobyte.dev
+/wp-includes/widgets/plugins.php 1 envobyte.dev
+/.well-known/acme-challenge/plugins.php 1 envobyte.dev
+/checkbex.php 1 envobyte.dev
+/wp-includes/sitemaps/plugins.php 1 envobyte.dev
+/ads.txt 7 -
+/wp-includes/sodium_compat/plugins.php 1 envobyte.dev
+/wp-content/plugins/wp_cache/radio.php 1 envobyte.dev
+/admin.php 1 envobyte.dev
+/.well-known/plugins.php 1 envobyte.dev
+/wp-content/themes/plugins.php 1 envobyte.dev
+/wp-includes/PHPMailer/plugins.php 1 envobyte.dev
+/.vscode/ftp-sync.json 1 -
+/wp-includes/block-supports/plugins.php 1 envobyte.dev
+/.vscode/sftp.json 1 -
+/wp-includes/html-api/plugins.php 1 envobyte.dev
+/wp-includes/style-engine/plugins.php 1 envobyte.dev
+/wp-includes/blocks/plugins.php 1 envobyte.dev
+/wp-content/plugins/core/include.php 1 envobyte.dev
+/wp-includes/customize/plugins.php 1 envobyte.dev
+/.ftp-sync.json 1 -
+/wp-includes/Text/plugins.php 1 envobyte.dev
+/wp-content/style-css.php 1 envobyte.dev
+/wp-content/upgrade/plugins.php 1 envobyte.dev
+/wp-includes/SimplePie/plugins.php 1 envobyte.dev
+/wp-includes/IXR/plugins.php 1 envobyte.dev
+/humans.txt 6 -
+/security.txt 1 http://www.envobyte.dev/security.txt
+/wp-includes/block-patterns/plugins.php 1 envobyte.dev
+/wp-content/languages/plugins.php 1 envobyte.dev
+/wp-includes/php-compat/plugins.php 1 envobyte.dev
+/wp-includes/pomo/plugins.php 1 envobyte.dev
+/wp-includes/assets/plugins.php 1 envobyte.dev
+/wp-admin/user/plugins.php 1 envobyte.dev
+/sftp-config.json 1 -
+/ftpsync.setting 1 -
+/wp-admin/maint/plugins.php 1 envobyte.dev
+/wp-content/themes/themes.php 1 envobyte.dev
+/wp-includes/Requests/plugins.php 1 envobyte.dev
+/cgi-bin/plugins.php 1 envobyte.dev
+/.ftpconfig 1 -
+/.sftp-config.json 1 -
+/wp-content/pm.php 1 envobyte.dev
+/about.php 1 envobyte.dev
+/ftp-sync.json 1 -
+/.well-known/security.txt 1 http://www.envobyte.dev/.well-known/security.txt
+/wp-includes/certificates/plugins.php 1 envobyte.dev
+/wp-includes/ID3/plugins.php 1 envobyte.dev
+/wp-includes/plugins.php 1 envobyte.dev
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 5
+78.46.105.27 226 226 512 20240229233916
+3.133.118.171 1 1 87 20240209213150
+23.178.112.201 1 1 87 20240209213150
+54.184.222.16 1 1 87 20240209213151
+2.57.122.8 1 1 0 20240204032928
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 27
+20240201 11 11 0 6
+20240202 13 13 0 6
+20240203 9 9 0 4
+20240204 5 5 0 3
+20240205 6 6 0 3
+20240206 13 13 0 5
+20240207 4 4 0 2
+20240208 14 14 0 6
+20240209 21 21 773 8
+20240210 2 2 0 1
+20240211 9 9 0 4
+20240212 6 6 0 4
+20240213 6 6 0 3
+20240214 5 5 0 2
+20240215 9 9 0 5
+20240216 2 2 0 1
+20240217 8 8 0 4
+20240220 2 2 0 1
+20240221 9 9 0 4
+20240222 6 6 0 3
+20240223 5 5 0 2
+20240224 5 5 0 2
+20240225 13 13 0 6
+20240226 28 28 0 4
+20240227 5 5 0 2
+20240228 8 8 0 4
+20240229 6 6 0 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30mn-1h 4
+5mn-15mn 2
+1h+ 2
+0s-30s 84
+15mn-30mn 3
+30s-2mn 2
+2mn-5mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 11
+/wp-cron.php 218 0 93 93
+/.well-known/acme-challenge/xWDwPOOKsEesBewqNet-5L9fbwU6RPKwXY3cWAlLKkM 3 261 3 3
+/.well-known/acme-challenge/Z2PDYUX55Q9V4ZCL-C3XD6O8ATERM5T9 1 64 0 0
+/.well-known/acme-challenge/46607ZL8CG_YTK2W148TDTMWK9C4IPWD 1 64 0 0
+/.well-known/acme-challenge/KA0VV-KHMGBR0VJN-P3U3W3OZ5XWE-V5 1 64 1 0
+/.well-known/acme-challenge/O4BVKOBE58E105AAXZ8G4_BVOBUUO81_ 1 64 0 0
+/.well-known/acme-challenge/T374GB_BK234FEVEIW4M5Z9VK5__BJ9M 1 64 0 0
+/ 1 0 1 1
+/.well-known/acme-challenge/DV_YP106PCORTMF6_IF1O2ECR53J5AKH 1 64 0 1
+/.well-known/acme-challenge/0FF59L0C7E7BEIP_KY3951OQ45IQ2SLM 1 64 0 0
+/.well-known/acme-challenge/ZA7M25RX5EIPL7518CEA6_3JYWNJEK6M 1 64 0 0
+END_SIDER

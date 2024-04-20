@@ -1,0 +1,216 @@
+# Webalizer V2.23-08 Incremental Data - 03/12/2024 15:21:28
+2024 3 12 15 21 28
+27 27 11 9 2 7 18454 7 6 0
+11 27 27 12 12
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+27 27 18454 11 7 6
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+27 27 18454 7
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0
+0
+0
+27
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/.well-known/acme-challenge/W2DAVYK_L3I84D6RXZ9OZENB0I7H2_E-
+0 1 0 64 0 0
+/.well-known/acme-challenge/Jm0MFYcRwvNm0uSnzr4JI04IVBlgUdFNGe9TAfdrBRo
+0 3 0 261 0 0
+/.well-known/acme-challenge/NwHlKTq_KC9puTyo3i1cjfBN5UluwdnmAUAkaxtF7x4
+0 3 0 261 0 0
+/_autoindex/assets/icons/folder-fill.svg
+0 2 39088624 822 0 0
+/.well-known/acme-challenge/UYP1ECCJBXD779L89U3K8C56CIL2A-UK
+0 1 0 64 0 0
+/_autoindex/assets/css/autoindex.css
+0 2 39076144 2574 0 0
+/
+0 7 39075632 4158 6 1
+/_autoindex/assets/js/tablesort.js
+0 4 39088496 8874 0 0
+/_autoindex/assets/js/tablesort.number.js
+0 4 39076368 1376 0 0
+# End Of Table - urls
+# -sites- (monthly)
+ec2-18-216-100-248.us-east-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+business500.mypowerfulserver.com
+0 2 2 128 0 0
+-
+136.40.132.34.bc.googleusercontent.com
+0 1 1 629 1 1710256892
+/
+ec2-3-144-2-209.us-east-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+outbound2e.letsencrypt.org
+0 2 2 174 0 0
+-
+ec2-54-244-101-162.us-west-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+ec2-35-86-125-186.us-west-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+111.55.16.34.bc.googleusercontent.com
+0 1 1 632 1 1710256888
+/
+205.169.39.203
+0 8 8 7957 1 1710256806
+/
+205.169.39.239
+0 8 8 7957 2 1710256835
+/
+static.177.26.99.88.clients.your-server.de
+0 1 1 629 1 1710256882
+/
+# End Of Table - sites (monthly)
+# -sites- (daily)
+ec2-18-216-100-248.us-east-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+business500.mypowerfulserver.com
+0 2 2 128 0 0
+-
+136.40.132.34.bc.googleusercontent.com
+0 1 1 629 1 1710256892
+/
+ec2-3-144-2-209.us-east-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+outbound2e.letsencrypt.org
+0 2 2 174 0 0
+-
+ec2-54-244-101-162.us-west-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+ec2-35-86-125-186.us-west-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+111.55.16.34.bc.googleusercontent.com
+0 1 1 632 1 1710256888
+/
+205.169.39.203
+0 8 8 7957 1 1710256806
+/
+205.169.39.239
+0 8 8 7957 2 1710256835
+/
+static.177.26.99.88.clients.your-server.de
+0 1 1 629 1 1710256882
+/
+# End Of Table - sites (daily)
+# -referrers- 
+http://chillstore.envobyte.dev/
+0 12
+- (Direct Request)
+0 15
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36
+0 10
+Mozilla/5.0 (compatible; Let's Encrypt validation server; +https://www.letsencrypt.org)
+0 6
+Cpanel-HTTP-Client/1.0
+0 2
+Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.80 Mobile Safari/537.36
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36
+0 1
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

@@ -1,0 +1,557 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202403 will be lost/reset.
+# Last config file used to build this data file was /home2/envobyte/tmp/awstats/ssl/awstats.tennerdealsapi.envobyte.dev.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2029                
+POS_TIME 2703                
+POS_VISITOR 17897               
+POS_DAY 20732               
+POS_DOMAIN 3582                
+POS_LOGIN 3949                
+POS_ROBOT 4104                
+POS_WORMS 4236                
+POS_EMAILSENDER 4367                
+POS_EMAILRECEIVER 4510                
+POS_SESSION 21088               
+POS_SIDER 21298               
+POS_FILETYPES 4645                
+POS_DOWNLOADS 4905                
+POS_OS 5243                
+POS_BROWSER 5442                
+POS_SCREENSIZE 5849                
+POS_UNKNOWNREFERER 5923                
+POS_UNKNOWNREFERERBROWSER 6081                
+POS_ORIGIN 6234                
+POS_SEREFERRALS 6380                
+POS_PAGEREFS 6558                
+POS_SEARCHWORDS 6816                
+POS_KEYWORDS 6968                
+POS_MISC 2366                
+POS_ERRORS 7027                
+POS_CLUSTER 3805                
+POS_SIDER_404 7266                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20240312143734 6 627 7371507946922
+FirstTime 20240301025213
+LastTime 20240312143734
+LastUpdate 20240312204959 6 0 6 0 0
+TotalVisits 131                 
+TotalUnique 66                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 66                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+AddToFavourites 0 65 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+FlashSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+TotalMisc 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 298 691 9581536 308 718 2886078
+1 315 753 9016742 209 606 903912
+2 263 647 11415422 243 505 1301837
+3 72 271 2867218 54 107 105140
+4 35 36 53051 42 42 8251
+5 52 68 312142 135 135 7374
+6 7 7 1045 4 4 292939
+7 9 9 2338 31 33 9383
+8 73 129 1061308 106 128 58133
+9 236 446 29816646 161 376 5178085
+10 42 72 512364 33 34 4861
+11 31 32 84988 82 82 850341
+12 66 156 1878048 46 129 794053
+13 104 479 9851255 19 117 203412
+14 106 215 61648623 76 162 243566
+15 91 298 6130526 109 183 1479762
+16 28 29 340029 68 68 12937
+17 33 33 19003 60 60 14678
+18 32 75 4216346 45 68 65816
+19 144 171 4668334 202 343 687300
+20 161 307 5142086 215 260 2494832
+21 199 294 6690143 228 486 5464412
+22 1706 1903 10045972 4746 5000 3639675
+23 1071 1390 10578988 2739 3029 2451884
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 9
+pk 4398 7301 149589014
+us 309 356 6030248
+cn 259 387 2466749
+in 165 283 5188873
+ro 13 73 1015354
+ru 11 53 708557
+eu 9 9 15518
+cl 8 35 454322
+gb 2 14 195734
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+mp4 6 51547018 0 0
+css 709 10493653 0 0
+jpg 89 21312568 0 0
+png 396 32514327 0 0
+svg 1 8912 0 0
+js 2128 32648339 0 0
+map 13 9314464 0 0
+html 1 6893 0 0
+jpeg 8 414762 0 0
+Unknown 5160 7403433 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 4
+/assets/admin/img/vendor-photo/media-content/1709456560.mp4 1 15 44753686
+/assets/admin/img/vendor-photo/media-content/1709575497.mp4 0 9 2381182
+/assets/admin/img/vendor-photo/media-content/1709485127.mp4 0 6 1966573
+/assets/admin/img/vendor-photo/media-content/1709485367.mp4 0 7 2445577
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 8
+android10 62 9
+androidmarshmallow 756 575
+android 8 8
+linux 8 8
+ios_iphone 299 261
+Unknown 140 140
+win10 7185 4143
+androidfroyo 90 30
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 17
+safari17.3.1 16 1
+firefox120.0 8 8
+chrome99.0.4844.51 14 2
+chrome116.0.0.0 6 6
+chrome103.0.5060.129 2 2
+chrome86.0.4240.198 14 2
+chrome96.0.4664.110 14 2
+chrome121.0.0.0 40 6
+safari 1 0
+Unknown 140 140
+firefox123.0 339 233
+chrome80.0.3987.106 64 19
+android 90 30
+safari16.6 283 260
+chrome98.0.4758.102 28 4
+chrome122.0.0.0 7475 4457
+opera83.0.4254.46 14 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+PostmanRuntime/7.36.3 20240312143734
+WhatsApp/2.23.20.0 20240307220513
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+PostmanRuntime/7.36.3 20240312143734
+WhatsApp/2.23.20.0 20240307220513
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1078 1120
+From1 0 0
+From2 2 2
+From3 809 856
+From4 3285 6570
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google_com 1 1
+www_google_com 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 4
+http://localhost:3000 726 772
+http://localhost:3001 77 78
+http://localhost:3003 5 5
+http://localhost:3002 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 12
+206 2 4147372
+204 1040 0
+500 115 12612471
+403 19 11883
+404 3260 6469446
+419 2 4006
+400 486 28983
+422 53 7809
+405 28 4495259
+302 7593 1377666
+401 7 231
+301 5 3535
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 109
+/api/v1/social 1 -
+/vendor/2fa/assets/img/team-2.jpg 1 https://tennerdealsapi.envobyte.dev/vendor/2fa/2faVerify
+/vendor/assets/img/team-1.jpg 18 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/assets/js/_site_dashboard_free/assets/js/dashboard-free.js.map 165 -
+/admin/vendor-management/vendor/13/assets/img/small-logos/logo-spotify.svg 2 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/13/edit
+/admin/vendor-management/assets/img/team-2.jpg 197 https://tennerdealsapi.envobyte.dev/admin/vendor-management/registered-vendors
+/vendor/assets/img/team-2.jpg 162 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/vendor 1 -
+/verify/email 2 -
+/assets/admin/img/user-profile/9ecd2806507cf64f422bd910ea4dc853.svg 1 -
+/assets/admin/img/vendor-photo/65e339b17079f.png 1 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/8/edit
+/admin/pages/profile.html 1 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/admin/assets/img/small-logos/logo-atlassian.svg 21 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/vendor/assets/img/team-3.jpg 18 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/assets/admin/img/event-popup/65e0fdf2bbaa1.png 16 https://tennerdealsapi.envobyte.dev/admin/event-popup/edit-event-popup/1
+/vendor/assets/img/small-logos/logo-atlassian.svg 17 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/admin/user-management/user/11/assets/img/team-2.jpg 1 https://tennerdealsapi.envobyte.dev/admin/user-management/user/11/edit
+/admin/vendor-management/vendor/8/assets/img/team-2.jpg 4 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/8/edit
+/assets/admin/img/event-popup/65e0fdb0462f9.png 25 https://tennerdealsapi.envobyte.dev/admin/event-popup/edit-event-popup/1
+/admin/admin-management/assets/img/team-2.jpg 10 https://tennerdealsapi.envobyte.dev/admin/admin-management/registered-admins
+/api/v1/social_ 1 -
+/admin/vendor-management/vendor/10/assets/img/team-2.jpg 50 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/10/edit
+/public/email/verified 1 -
+/api/v1/profile/update_profile 16 http://localhost:3000/
+/xlERmzXwcv 1 -
+/admin/assets/img/team-2.jpg 260 https://tennerdealsapi.envobyte.dev/admin/event-popup
+/admin/admin-management/assets/img/small-logos/logo-spotify.svg 10 https://tennerdealsapi.envobyte.dev/admin/admin-management/registered-admins
+/admin/vendor-management/vendor/9/assets/img/small-logos/logo-spotify.svg 3 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/9/edit
+/vendor/assets/img/small-logos/logo-slack.svg 17 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/admin/user-management/favourite/assets/img/small-logos/logo-spotify.svg 29 https://tennerdealsapi.envobyte.dev/admin/user-management/favourite/event-offer
+/admin/user-management/favourite/assets/img/team-2.jpg 29 https://tennerdealsapi.envobyte.dev/admin/user-management/favourite/event-offer
+/65de2e9d76e54.png 2 -
+/admin/vendor-management/vendor/9/assets/img/team-2.jpg 3 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/9/edit
+/admin/term-condition/edit-page/assets/img/team-2.jpg 9 https://tennerdealsapi.envobyte.dev/admin/term-condition/edit-page/24
+/vendor/event-offer-management/pages/profile.html 1 https://tennerdealsapi.envobyte.dev/vendor/event-offer-management/events
+/admin/term-condition/assets/img/team-2.jpg 15 https://tennerdealsapi.envobyte.dev/admin/term-condition/edit-page
+/assets/admin/img/vendor-photo/undefined 6 http://localhost:3000/
+/assets/admin/img/user-profile/svg 1 -
+/public/email 1 -
+/assets/js/jquery-migrate.min.map 166 -
+/admin/user-management/user/11/assets/img/small-logos/logo-spotify.svg 1 https://tennerdealsapi.envobyte.dev/admin/user-management/user/11/edit
+/public/api/v1 1 -
+/assets/admin/img/user-profile/9ecd2806507cf64f422bd910ea4dc853 3 http://localhost:3000/
+/assets/admin/img/vendor-photo/1709614754.png 1 -
+/admin/user-management/user/6/assets/img/small-logos/logo-spotify.svg 2 https://tennerdealsapi.envobyte.dev/admin/user-management/user/6/edit
+/vendor/pages/profile.html 1 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/admin/vendor-management/vendor/13/assets/img/team-2.jpg 2 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/13/edit
+/vemail/verify 1 -
+/admin/login 1 -
+/admin/vendor-management/vendor/11/assets/img/team-2.jpg 1 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/11/edit
+/assets/admin/img/user-profile/avatar2.9ecd2806507cf64f422bd910ea4dc853 1 -
+/vendor/assets/img/team-4.jpg 19 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/vendor/assets/img/small-logos/logo-xd.svg 17 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/assets/admin/img/user-profile/static/media/avatar3.26c35065bdf118c3642b2de9beaca442.svg 1 -
+/admin/user-management/assets/img/team-2.jpg 31 https://tennerdealsapi.envobyte.dev/admin/user-management/registered-user
+/assets/admin/img/vendor-photo/media-content/null 15 http://localhost:3000/
+/vendor/assets/img/small-logos/logo-spotify.svg 162 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/public/api/v1/event_offers/store_status_seen 1 -
+/assets/admin/img/user-profile/26c35065bdf118c3642b2de9beaca442 6 http://localhost:3000/
+/admin/event-offer-management/assets/img/small-logos/logo-spotify.svg 74 https://tennerdealsapi.envobyte.dev/admin/event-offer-management/events
+/vendor/event-offer-management/assets/img/small-logos/logo-spotify.svg 88 https://tennerdealsapi.envobyte.dev/vendor/event-offer-management/events
+/vendor/assets/img/small-logos/logo-jira.svg 17 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/vendor/edit-event-offer/9 1 -
+/vendor/assets/img/small-logos/logo-invision.svg 17 https://tennerdealsapi.envobyte.dev/vendor/dashboard
+/assets/admin/img/user-profile/avatar3.26c35065bdf118c3642b2de9beaca442.svg 1 -
+/admin/vendor-management/vendor/10/assets/img/small-logos/logo-spotify.svg 50 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/10/edit
+/admin/vendor-management/vendor/11/assets/img/small-logos/logo-spotify.svg 1 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/11/edit
+/vendor/edit-event-offer/assets/img/small-logos/logo-spotify.svg 79 https://tennerdealsapi.envobyte.dev/vendor/edit-event-offer/8
+/admin/user-management/user/8/assets/img/small-logos/logo-spotify.svg 4 https://tennerdealsapi.envobyte.dev/admin/user-management/user/8/edit
+/assets/js/core/bootstrap.min.js.map 165 -
+/admin/assets/img/small-logos/logo-slack.svg 22 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/admin/user-management/user/6/assets/img/team-2.jpg 2 https://tennerdealsapi.envobyte.dev/admin/user-management/user/6/edit
+/admin/edit-event-offer/assets/img/team-2.jpg 69 https://tennerdealsapi.envobyte.dev/admin/edit-event-offer/1
+/vendor/event-offer-management/assets/img/team-2.jpg 87 https://tennerdealsapi.envobyte.dev/vendor/event-offer-management/events
+/api/65de2e9d76e54.png 1 -
+/vendor/2fa/assets/img/small-logos/logo-spotify.svg 1 https://tennerdealsapi.envobyte.dev/vendor/2fa/2faVerify
+/assets/admin/img/user-profile/39ef21eb19c9d8ebac2436cd45548c93 8 http://localhost:3000/
+/admin/event-popup/edit-event-popup/assets/img/small-logos/logo-spotify.svg 24 https://tennerdealsapi.envobyte.dev/admin/event-popup/edit-event-popup/1
+/admin/assets/img/team-4.jpg 24 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/admin/assets/img/small-logos/logo-spotify.svg 254 https://tennerdealsapi.envobyte.dev/admin/event-popup
+/admin/assets/img/team-3.jpg 25 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/admin/event-popup/edit-event-popup/assets/img/team-2.jpg 24 https://tennerdealsapi.envobyte.dev/admin/event-popup/edit-event-popup/1
+/api/v1/65de2e9d76e54.png 2 -
+/path_to_your_video_file 2 https://tennerdealsapi.envobyte.dev/vendor/edit-event-offer/9
+/admin/edit-event-offer/assets/img/small-logos/logo-spotify.svg 68 https://tennerdealsapi.envobyte.dev/admin/edit-event-offer/1
+/assets/admin/img/user-profile/avatar2.9ecd2806507cf64f422bd910ea4dc853.svg 5 http://localhost:3000/
+/admin/assets/img/small-logos/logo-invision.svg 22 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/admin/assets/img/small-logos/logo-xd.svg 21 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/assets/admin/img/user-profile//static/media/avatar2.9ecd2806507cf64f422bd910ea4dc853.svg 3 http://localhost:3000/
+/assets/admin/img/user-profile/null 29 http://localhost:3000/
+/admin/vendor-management/vendor/8/assets/img/small-logos/logo-spotify.svg 4 https://tennerdealsapi.envobyte.dev/admin/vendor-management/vendor/8/edit
+/assets/admin/img/noimage.jpg 8 https://tennerdealsapi.envobyte.dev/vendor/add-event-offer
+/assets/admin/img/user-profile/b31ee4c889a44833c1fa65b641ac700e 9 http://localhost:3000/
+/admin/event-popup/assets/img/team-2.jpg 8 https://tennerdealsapi.envobyte.dev/admin/event-popup/create-event-popup
+/admin/assets/img/small-logos/logo-jira.svg 22 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/admin/event-popup/assets/img/small-logos/logo-spotify.svg 7 https://tennerdealsapi.envobyte.dev/admin/event-popup/create-event-popup
+/admin/assets/img/team-1.jpg 27 https://tennerdealsapi.envobyte.dev/admin/dashboard
+/vendor/login 2 -
+/admin/term-condition/assets/img/small-logos/logo-spotify.svg 15 https://tennerdealsapi.envobyte.dev/admin/term-condition/edit-page
+/admin/term-condition/edit-page/assets/img/small-logos/logo-spotify.svg 9 https://tennerdealsapi.envobyte.dev/admin/term-condition/edit-page/24
+/assets/admin/img/event-popup/65e33a4a3d0b0.png 19 https://tennerdealsapi.envobyte.dev/admin/event-popup/edit-event-popup/1
+/admin/user-management/user/8/assets/img/team-2.jpg 4 https://tennerdealsapi.envobyte.dev/admin/user-management/user/8/edit
+/admin/user-management/assets/img/small-logos/logo-spotify.svg 31 https://tennerdealsapi.envobyte.dev/admin/user-management/registered-user
+/admin/vendor-management/assets/img/small-logos/logo-spotify.svg 196 https://tennerdealsapi.envobyte.dev/admin/vendor-management/registered-vendors
+/api/v1/event_offers/edit_profile 1 -
+/public/vendor 1 -
+/api/v1/so 1 -
+/admin/event-offer-management/assets/img/team-2.jpg 75 https://tennerdealsapi.envobyte.dev/admin/event-offer-management/events
+/vendor/edit-event-offer/assets/img/team-2.jpg 79 https://tennerdealsapi.envobyte.dev/vendor/edit-event-offer/8
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 66
+39.35.208.163 2198 2198 323039 20240305234726
+39.35.217.246 1104 3183 94424287 20240304233529
+139.135.41.141 283 291 5352495 20240309024348
+103.31.104.10 282 308 11276932 20240312143734 20240312143326 /api/v1/event_offers/list
+223.123.17.26 215 323 1856274 20240304232624
+182.181.2.225 120 127 3060759 20240309170731
+110.93.205.226 119 234 2053050 20240307092617
+103.74.21.160 81 129 2519880 20240303154823
+182.186.216.27 69 218 2522317 20240303123313
+39.63.13.146 61 365 4794392 20240302210048
+182.186.168.27 59 119 2444840 20240301214705
+182.181.30.42 59 60 58510 20240305055443
+119.73.105.250 58 104 787233 20240304232043
+119.155.203.223 50 132 1948846 20240304092311
+182.181.23.75 45 45 6264 20240302203019
+223.123.18.2 39 40 349141 20240307131434
+103.74.21.138 38 39 98708 20240304005705
+119.155.211.175 33 55 9374796 20240305095444
+103.74.21.155 31 36 1422373 20240303200001
+119.155.223.55 30 39 2013188 20240305102239
+111.88.158.55 23 35 8732372 20240308095541
+39.62.103.118 18 22 2449180 20240310211750
+39.35.199.31 14 17 141737 20240301220429
+111.88.158.192 14 17 2460405 20240307004613
+77.81.142.242 13 73 1015354 20240302093058
+45.89.242.145 1 1 1723 20240301095857
+104.166.80.21 1 1 1729 20240302111836
+184.190.211.50 1 16 250068 20240305102659
+185.198.243.127 1 1 1723 20240302093019
+223.123.13.103 3 22 261238 20240307154251
+223.123.6.191 2 2 96 20240307220607
+103.74.21.169 12 49 703157 20240305002625
+138.199.39.3 9 9 15518 20240302093019
+103.74.21.132 2 17 251584 20240304180906
+181.215.176.62 3 18 253411 20240302080826
+98.159.224.37 2 14 195737 20240307192110
+39.35.214.36 3 3 165 20240307220513
+182.186.211.231 6 7 60649 20240301115037
+191.96.103.88 3 3 5173 20240302093019
+104.166.80.207 1 1 1727 20240301111821
+191.101.174.10 2 14 195738 20240307152108
+185.198.243.116 1 16 249962 20240301095901
+104.166.80.151 1 1 1724 20240302111704
+104.166.80.205 1 1 1730 20240304111527
+111.88.158.132 12 13 329342 20240310164719
+89.208.29.12 2 14 195725 20240306085309
+185.198.243.94 1 1 1727 20240301095927
+185.198.243.96 1 16 249959 20240302080901
+98.159.43.9 2 2 3447 20240302093019
+98.159.43.40 1 1 1722 20240301053500
+104.166.80.109 1 1 1721 20240301111849
+98.159.39.147 2 14 195730 20240306083733
+194.61.41.87 2 14 195734 20240307203512
+111.88.158.235 11 12 73052 20240309205756
+104.166.80.45 2 2 3456 20240303111221
+185.198.243.118 1 1 1724 20240301095927
+98.159.43.52 1 1 1726 20240301053454
+119.155.185.50 9 9 3752 20240309210641
+143.244.41.219 7 7 12066 20240302093016
+185.198.243.98 1 1 1726 20240301095854
+98.159.43.48 1 1 1723 20240301095858
+185.198.243.89 2 2 3445 20240302080900
+45.154.138.200 1 13 193171 20240307181838
+89.208.29.14 1 1 2566 20240307181845
+104.166.80.72 1 1 1724 20240304111347
+111.119.161.9 1 16 249907 20240302205943
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 11
+20240301 174 567 7799863 27
+20240302 386 831 11700069 30
+20240303 1034 2881 106225175 9
+20240304 548 966 10409421 13
+20240305 2495 2586 20110987 14
+20240306 90 124 4198357 6
+20240307 224 304 6523130 17
+20240308 142 164 16021948 8
+20240309 45 47 161741 4
+20240310 30 35 2778522 2
+20240312 6 6 4940 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+2mn-5mn 6
+30mn-1h 10
+15mn-30mn 16
+1h+ 26
+0s-30s 45
+5mn-15mn 9
+30s-2mn 18
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 77
+/login 2416 330084 6 4
+/api/v1/event_offers/list 364 265153 12 19
+/admin/vendor-management/registered-vendors 280 1271613 1 1
+/vendor/login 173 271251 61 43
+/api/v1/profile/user 142 25014 2 5
+/api/v1/login 121 14526 25 4
+/vendor/edit-event-offer/9 107 513030 0 1
+/vendor/add-event-offer 105 487978 0 1
+/api/v1/event/popup 103 20436 4 5
+/vendor/event-offer-management/events 93 347529 0 0
+/admin/event-offer-management/events 90 363299 0 1
+/admin/event-popup 90 328099 0 1
+/admin/dashboard 79 489242 0 2
+/admin/vendor-management/vendor/10/edit 77 319455 0 0
+/vendor/signup 69 173433 2 9
+/email/verify 68 98191 0 2
+/api/v1/page/term_conditions 62 16452 4 5
+/admin 55 80549 7 2
+/vendor/dashboard 51 320692 1 3
+/admin/term-condition 44 166184 0 0
+/api/v1/profile/update_profile 41 7467 0 1
+/api/v1/favourite/store 33 3340 1 3
+/admin/user-management/registered-user 31 122291 0 0
+/api/v1/contact_us/store 29 1769 0 4
+/admin/edit-event-offer/1 29 125363 0 1
+/admin/vendor-management/vendor/10/update-vendor-account-status 1 48 0 0
+/api/v1/event_offers/store_status_seen 1 48 1 0
+/admin/user-management/user/6/edit 2 7630 0 0
+/admin/admin-management/registered-admins 10 44310 0 0
+/admin/term-condition/edit-page/24 9 33372 0 0
+/admin/event-popup/update-event-popup 9 656 0 0
+/admin/user-management/user/8/edit 4 15247 0 0
+/admin/vendor-management/vendor/8/edit 4 16446 0 0
+/admin/user-management/favourite/event-offer 27 97029 0 2
+/api/v1/match_otp 7 308 1 0
+/admin/edit-event-offer/17 2 10237 0 0
+/admin/2fa 5 55570 0 0
+/vendor/store 1 0 0 0
+/admin/edit-event-offer/14 7 32738 0 0
+/admin/vendor-management/vendor/11/edit 1 4067 0 0
+/admin/contact-us 18 68936 0 1
+/clear-cache 12 360 0 0
+/admin/event-offer-store 6 120 0 0
+/admin/vendor-management/vendor/10/update 5 120 0 0
+/admin/add-event-offer 24 109837 0 1
+/vendor/edit-event-offer/8 18 69394 0 0
+/vendor/event-offer-update 14 672 0 0
+/admin/user-management/user/11/edit 1 3809 0 0
+/admin/vendor-management/vendor/13/edit 2 8232 0 0
+/admin/event-popup/create-event-popup 11 44198 0 0
+/admin/term-condition/update-page/24 1 83 0 0
+/admin/edit-event-offer/13 18 86868 0 0
+/ 1 6893 0 0
+/register 3 5184 0 0
+/api/v1/register 9 477 0 0
+/admin/edit-event-offer/15 5 21787 0 0
+/assets/css/material-dashboard.css.map 13 9314464 0 0
+/admin/term-condition/update-page 7 581 0 0
+/vendor/2fa 19 147229 0 0
+/_ignition/health-check 1 33 0 0
+/admin/term-condition/edit-page 15 56508 0 0
+/admin/edit-event-offer/16 5 26151 0 1
+/admin/event-popup/edit-event-popup/1 24 99420 0 2
+/vendor/event-offer-store 4 92 0 0
+/api/v1/favourite/all_list 13 3804 0 0
+/vendor/create 1 0 0 0
+/api/v1/change_password 3 177 0 0
+/vendor/vendor_2fa 6 18012 0 1
+/api/v1/event/click 4 224 0 1
+/api/v1/forgot_password 10 570 1 0
+/vendor/edit-event-offer 27 133041 0 1
+/admin/event-offer-update 19 456 0 0
+/admin/event-popup/store-event-popup 1 82 0 0
+/admin/vendor-management/vendor/9/edit 4 16389 0 0
+/admin/vendor-management/vendor/8/update 2 48 0 0
+/api/v1/profile/edit_profile 2 180 1 1
+/api/v1/event_offers/store_status_seen/13 4 213 1 2
+END_SIDER
