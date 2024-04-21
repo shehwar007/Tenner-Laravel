@@ -59,8 +59,10 @@ class VendorController extends Controller
       'address' => 'required',
       'phone' => 'required',
       'email' => 'required|email|unique:vendors',
-      'password' => 'required|confirmed|min:6',
+      'password' => 'required|min:6',
     ];
+
+    
 
     // $info = Basic::select('google_recaptcha_status')->first();
     // if ($info->google_recaptcha_status == 1) {
@@ -75,7 +77,7 @@ class VendorController extends Controller
     // }
 
     $validator = Validator::make($request->all(), $rules, $messages);
-
+  
 
     if ($validator->fails()) {
       return redirect()->back()->withErrors($validator->errors());
@@ -84,6 +86,8 @@ class VendorController extends Controller
 
 
     $in = $request->all();
+
+   
 
     $file = $request->file('logo');
     if ($file) {
