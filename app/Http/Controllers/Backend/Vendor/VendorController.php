@@ -83,6 +83,11 @@ class VendorController extends Controller
       return redirect()->back()->withErrors($validator->errors());
     }
 
+    if ($request->password != $request->password_confirmation) {
+       return redirect()->back();
+    }
+  
+
 
 
     $in = $request->all();
