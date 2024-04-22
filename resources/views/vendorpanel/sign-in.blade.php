@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="header-wrapper">
-            <div class="header-logo"><a href="index.html"><img src="{{ asset('assets2/images/logo.png')}}" alt="site logo"></a></div>
+            <div class="header-logo"><a href="{{route('vendor.welcome')}}"><img src="{{ asset('assets2/images/logo.png')}}" alt="site logo"></a></div>
             <div class="header-btn"><a class="contact-btn" href="#">Contact Us</a></div>
           </div>
         </div>
@@ -84,7 +84,7 @@
                   <button type="submit" class="form-btn">Sign in</button>
                 </div>
               </form>
-              <p class="form-note">1Don’t have an account? <a class="link" href="">Sign Up</a></p>
+              <p class="form-note">Don’t have an account? <a class="link" href="{{route('vendor.signup')}}">Sign Up</a></p>
             </div>
           </div>
 

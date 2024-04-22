@@ -61,7 +61,7 @@ Route::get('check', function (){
 
 
   Route::middleware('guest:vendor')->group(function () {
-    Route::get('/welcome', [VendorController::class,'welcome']);
+    Route::get('/welcome', [VendorController::class,'welcome'])->name('vendor.welcome');;
     Route::get('/login', [VendorController::class,'login'])->name('vendor.login');
     
     //  Route::get('/login', function(){
