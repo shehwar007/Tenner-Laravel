@@ -31,8 +31,8 @@ Route::get('/', function () {
 
 
 // Redirect Breez Default Routes
-Route::redirect('/login', '/vendor/login');
-Route::redirect('/register', '/vendor/signup');
+// Route::redirect('/login', '/vendor/login');
+// Route::redirect('/register', '/vendor/signup');
 
 
 

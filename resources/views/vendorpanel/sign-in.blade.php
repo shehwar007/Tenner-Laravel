@@ -27,33 +27,64 @@
   <section class="main welcome-section">
     <div class="container">
       <div class="row">
+        <div class="col-12">
+      
+          @if(session('danger'))
+          <div class="alert alert-danger">
+            {{ session('danger') }}
+          </div>
+          @endif
+
+          @foreach($errors->all() as $error)
+          <div class="alert alert-danger">{{ $error }}</div>
+          @endforeach
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          @if(session('success'))
+          <div class="alert alert-success">
+            {{ session('success') }}
+          </div>
+          @endif
+        </div>
+        <div class="col-12">
+          @if(session('error'))
+          <div class="alert alert-danger">
+            {{ session('error') }}
+          </div>
+          @endif
+        </div>
+
+      </div>
+      <div class="row">
         <div class="col-lg-12">
           <div class="card-wrapper">
             <div class="signin-card Card">
               <h3 class="card-title">Business Sign in</h3>
-        
-                <form class="site-form signin-form" action="{{ route('vendor.authentication') }}" method="POST">
-                  @csrf
-                  <div class="form-field">
-                    <label for="" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id=""  name="email" placeholder="Enter Email Address">
+
+              <form class="site-form signin-form" action="{{ route('vendor.authentication') }}" method="POST">
+                @csrf
+                <div class="form-field">
+                  <label for="" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="" name="email" placeholder="Enter Email Address">
+                </div>
+                <div class="form-field">
+                  <label for="password" class="form-label">Enter Password</label>
+                  <div class="password-field">
+                    <input name="password" type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
+                    <span class="password-icon" id="show_password" onclick="password_show_hide()">
+                      <i class="fa-regular fa-eye-slash" id="show_eye" style="display: block;"></i>
+                      <i class="fa-regular fa-eye" id="hide_eye" style="display: none;"></i>
+                    </span>
+                    <a class="forget-password" href="">Forgot Password</a>
                   </div>
-                  <div class="form-field">
-                    <label for="password" class="form-label">Enter Password</label>
-                    <div class="password-field">
-                      <input name="password" type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
-                      <span class="password-icon" id="show_password" onclick="password_show_hide()">
-                        <i class="fa-regular fa-eye-slash" id="show_eye" style="display: block;"></i>
-                        <i class="fa-regular fa-eye" id="hide_eye" style="display: none;"></i>
-                      </span>
-                      <a class="forget-password" href="">Forgot Password</a>
-                    </div>
-                  </div>
-                  <div class="form-field m-0">
-                    <button type="submit" class="form-btn">Sign in</button>
-                  </div>
-                </form>
-                <p class="form-note">1Don’t have an account? <a class="link" href="">Sign Up</a></p>
+                </div>
+                <div class="form-field m-0">
+                  <button type="submit" class="form-btn">Sign in</button>
+                </div>
+              </form>
+              <p class="form-note">1Don’t have an account? <a class="link" href="">Sign Up</a></p>
             </div>
           </div>
 

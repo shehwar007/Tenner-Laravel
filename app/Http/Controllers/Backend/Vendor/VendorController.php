@@ -40,7 +40,7 @@ class VendorController extends Controller
   //login
   public function login()
   {
-      
+
     return view('vendorpanel.sign-in');
   }
   //signup
@@ -62,7 +62,7 @@ class VendorController extends Controller
       'password' => 'required|min:6',
     ];
 
-    
+
 
     // $info = Basic::select('google_recaptcha_status')->first();
     // if ($info->google_recaptcha_status == 1) {
@@ -77,22 +77,22 @@ class VendorController extends Controller
     // }
 
     $validator = Validator::make($request->all(), $rules, $messages);
-  
+
 
     if ($validator->fails()) {
       return redirect()->back()->withErrors($validator->errors());
     }
 
     if ($request->password != $request->password_confirmation) {
-       return redirect()->back();
+      return redirect()->back();
     }
-  
+
 
 
 
     $in = $request->all();
 
-   
+
 
     $file = $request->file('logo');
     if ($file) {
@@ -120,37 +120,37 @@ class VendorController extends Controller
     //     ->select('website_title', 'smtp_status', 'smtp_host', 'smtp_port', 'encryption', 'smtp_username', 'smtp_password', 'from_mail', 'from_name')
     //     ->first();
 
-      // $name = $request->username;
-      // $token =  $request->email;
+    // $name = $request->username;
+    // $token =  $request->email;
 
-      // $link = '<a href=' . url("vendors/email/verify?token=" . $token) . '>Click Here</a>';
+    // $link = '<a href=' . url("vendors/email/verify?token=" . $token) . '>Click Here</a>';
 
-      // $mailBody = str_replace('{username}', $name, $mailBody);
-      // $mailBody = str_replace('{verification_link}', $link, $mailBody);
-      // $mailBody = str_replace('{website_title}', $info->website_title, $mailBody);
+    // $mailBody = str_replace('{username}', $name, $mailBody);
+    // $mailBody = str_replace('{verification_link}', $link, $mailBody);
+    // $mailBody = str_replace('{website_title}', $info->website_title, $mailBody);
 
-      // // initialize a new mail
-      // $mail = new PHPMailer(true);
-      // $mail->CharSet = 'UTF-8';
-      // $mail->Encoding = 'base64';
+    // // initialize a new mail
+    // $mail = new PHPMailer(true);
+    // $mail->CharSet = 'UTF-8';
+    // $mail->Encoding = 'base64';
 
-      // if smtp status == 1, then set some value for PHPMailer
-      // if ($info->smtp_status == 1) {
+    // if smtp status == 1, then set some value for PHPMailer
+    // if ($info->smtp_status == 1) {
 
-      //   $mail->isSMTP();
-      //   $mail->Host       = $info->smtp_host;
-      //   $mail->SMTPAuth   = true;
-      //   $mail->Username   = $info->smtp_username;
-      //   $mail->Password   = $info->smtp_password;
+    //   $mail->isSMTP();
+    //   $mail->Host       = $info->smtp_host;
+    //   $mail->SMTPAuth   = true;
+    //   $mail->Username   = $info->smtp_username;
+    //   $mail->Password   = $info->smtp_password;
 
-      //   if ($info->encryption == 'TLS') {
-      //     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-      //   }
+    //   if ($info->encryption == 'TLS') {
+    //     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    //   }
 
-      //   $mail->Port       = $info->smtp_port;
-      
+    //   $mail->Port       = $info->smtp_port;
 
-      // finally add other informations and send the mail
+
+    // finally add other informations and send the mail
     //   try {
     //     $mail->setFrom($info->from_mail, $info->from_name);
     //     $mail->addAddress($request->email);
@@ -190,7 +190,7 @@ class VendorController extends Controller
   public function authentication(Request $request)
   {
 
- 
+
 
     $rules = [
       'email' => 'required',
@@ -216,46 +216,47 @@ class VendorController extends Controller
       return redirect()->back()->withErrors($validator->errors());
     }
 
-    if (
-      Auth::guard('vendor')->attempt([
-        'email' => $request->email,
-        'password' => $request->password
-      ])
-    ) {
+    if (Auth::guard('vendor')->attempt(['email' => $request->email, 'password' => $request->password])) {
       $authAdmin = Auth::guard('vendor')->user();
-    
-      if ($authAdmin->account_status == 0) {
-        Session::flash('alert', 'Please wait for Admin Approvel !');
 
-        Auth::guard('vendor')->logout();
+   
 
-        return redirect()->back();
+        
+
+      if ($authAdmin->account_status === 0) {
+        Session::flush();
+        Session::flash('danger', 'Please wait for Admin Approvel !');
+     
+        // Auth::guard('vendor')->logout();
+
+        return back();
       }
-    
-        
-     if(empty($authAdmin->email_verified_at)){
-        
+
+
+      if (empty($authAdmin->email_verified_at)) {
+
         return  redirect('/email/verify');
-      }else{
-        return redirect('/vendor/dashboard');
+      } else {
+        return redirect()->route('vendor.event_management.event');
+        // return redirect('/vendor/dashboard');
       }
-      
+
       // $setting = DB::table('basic_settings')->where('uniqid', 12345)->select('organizer_email_verification', 'organizer_admin_approval')->first();
 
       // check whether the admin's account is active or not
       // if ($setting->organizer_email_verification == 1 && $authAdmin->email_verified_at == NULL && $authAdmin->status == 0) {
-        // Session::flash('alert', 'Please Verify Your Email Address!');
+      // Session::flash('alert', 'Please Verify Your Email Address!');
 
-        // logout auth admin as condition not satisfied
-        // Auth::guard('organizer')->logout();
+      // logout auth admin as condition not satisfied
+      // Auth::guard('organizer')->logout();
 
-        // return redirect()->back();
+      // return redirect()->back();
       // } elseif ($setting->organizer_email_verification == 0 && $setting->organizer_admin_approval == 1) {
-        Session::put('secret_login', 0);
-      } else {
-        Session::put('secret_login', 0);
-        return redirect()->route('vendor.dashboard');
-      }
+      Session::put('secret_login', 0);
+    } else {
+      Session::flash('danger', 'User not found !');
+      return back();
+    }
     // } else {
     //   return redirect()->back()->with('alert', 'Oops, Username or password does not match!');
     // }
@@ -372,18 +373,18 @@ class VendorController extends Controller
   // }
   public function logout(Request $request)
   {
-      
+
     $id = Auth::guard('vendor')->user()->id;
     $user = Vendor::where('id', $id)->first();
     // dd($user);
     $user->email_verified_at = null;
     $user->save();
-    
+
     Auth::guard('vendor')->logout();
-    Session::forget('secret_login');  
+    Session::forget('secret_login');
 
     Session::flush();
- 
+
 
     return redirect()->route('vendor.login');
   }
@@ -589,12 +590,12 @@ class VendorController extends Controller
     $email = request()->input('token');
     $user = Vendor::where('email', $email)->first();
     $user->email_verified_at = now();
-    
+
     // $setting = DB::table('basic_settings')->where('uniqid', 12345)->select('organizer_admin_approval')->first();
     // if ($setting->organizer_admin_approval != 1) {
-      // }
-      
-        $user->status = 1;
+    // }
+
+    $user->status = 1;
     // $user->save();
     Auth::guard('vendor')->login($user);
     Session::put('secret_login', 0);
