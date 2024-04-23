@@ -88,6 +88,8 @@ class VendorController extends Controller
       $file->move($directory, $fileName);
       $in['logo'] = $fileName;
     }
+    $in['email_verified_at']=now();
+    $in['status'] = 1;
     $in['password'] = Hash::make($request->password);
     $organizer = Vendor::create($in);
     Session::flash('success', 'Congratulations on registering successfully!');
