@@ -53,6 +53,44 @@ class VendorController extends Controller
   public function create(Request $request)
   {
 
+    // dd($request->all());
+
+    $rules = [
+      'name' => 'required|max:30',
+      'logo' => 'required',
+      'address' => 'required',
+      'phone' => 'required',
+      'email' => 'required|email|unique:vendors',
+      'password' => 'required|min:6',
+    ];
+
+    $messages = [];
+    $validator = Validator::make($request->all(), $rules, $messages);
+    if ($validator->fails()) {
+      return redirect()->back()->withErrors($validator->errors());
+    }
+    if ($request->password != $request->password_confirmation) {
+      Session::flash('danger', 'Password Not Match');
+      return redirect()->back();
+    }
+    $in = $request->all();
+    $file = $request->file('logo');
+    if ($file) {
+      $extension = $file->getClientOriginalExtension();
+      $directory = public_path('assets/admin/img/vendor-photo/');
+      $fileName = uniqid() . '.' . $extension;
+      @mkdir($directory, 0775, true);
+      $file->move($directory, $fileName);
+      $in['logo'] = $fileName;
+    }
+    $in['password'] = Hash::make($request->password);
+    $organizer = Vendor::create($in);
+    Session::flash('success', 'Congratulations on registering successfully!');
+    return redirect()->route('vendor.login');
+  }
+  public function create_old(Request $request)
+  {
+
     $rules = [
       'name' => 'required|max:30',
       'logo' => 'required',

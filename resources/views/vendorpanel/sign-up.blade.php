@@ -32,6 +32,11 @@
           @foreach($errors->all() as $error)
           <div class="alert alert-danger">{{ $error }}</div>
           @endforeach
+          @if(session('danger'))
+          <div class="alert alert-danger">
+            {{ session('danger') }}
+          </div>
+          @endif
         </div>
       </div>
       <div class="row">
@@ -116,11 +121,11 @@
                     <div class="grp-form-field">
                       <div class="form-field">
                         <label for="" class="form-label">Set Password</label>
-                        <input name="password" type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
                       </div>
                       <div class="form-field">
                         <label for="" class="form-label">Confirm Password</label>
-                        <input name="password" type="password" name="password_confirmation" class="form-control" id="password" placeholder="Confirm your password">
+                        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm your password">
                       </div>
                     </div>
                     <div class="form-field m-0">
