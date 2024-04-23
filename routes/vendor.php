@@ -82,6 +82,10 @@ Route::get('check', function (){
 
 
 Route::prefix('/vendor')->middleware('auth:vendor', 'verified')->group(function () {
+
+  
+  Route::get('/home_profile', [VendorController::class,'profile_v2'])->name('vendor.profile_v2');
+  Route::get('/home_profile_edit', [VendorController::class,'profile_v2_edit'])->name('vendor.profile_v2_edit');
   Route::get('/dashboard', [VendorController::class,'index'])->name('vendor.dashboard');
 
     

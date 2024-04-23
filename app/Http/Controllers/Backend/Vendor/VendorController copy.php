@@ -32,13 +32,6 @@ class VendorController extends Controller
   {
     return view('vendorpanel.index');
   }
-  public function profile_v2(){
-    // $authAdmin = Auth::guard('vendor')->user()->EventOffer;
-    // dd($authAdmin->EventOffer);
-    
-  
-    return view('vendorpanel.profile_v2');
-  }
 
   public function welcome()
   {

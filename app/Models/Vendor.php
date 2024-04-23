@@ -62,6 +62,11 @@ class Vendor extends Authenticatable  implements MustVerifyEmail
         return $this->hasOne(LoginSecurity::class);
     }
 
+    public function EventOffer()
+    {
+        return $this->hasOne(EventOffer::class)->latest();
+    }
+
 
     public function hasCompletedGoogle2fa()
     {
