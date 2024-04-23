@@ -49,12 +49,18 @@ class VendorController extends Controller
     return view('vendorpanel.sign-up');
     // return view('frontend.organizer.signup');
   }
+
+  public function email_verfication()
+  {
+    return view('vendorpanel.sign-up');
+  }
+
+  public function resetPassword(){
+     return view('vendorpanel.reset-password');
+  }
   //create
   public function create(Request $request)
   {
-
-    // dd($request->all());
-
     $rules = [
       'name' => 'required|max:30',
       'logo' => 'required',
@@ -63,7 +69,6 @@ class VendorController extends Controller
       'email' => 'required|email|unique:vendors',
       'password' => 'required|min:6',
     ];
-
     $messages = [];
     $validator = Validator::make($request->all(), $rules, $messages);
     if ($validator->fails()) {
@@ -88,6 +93,55 @@ class VendorController extends Controller
     Session::flash('success', 'Congratulations on registering successfully!');
     return redirect()->route('vendor.login');
   }
+
+  public function authentication(Request $request)
+  {
+
+    $rules = [
+      'email' => 'required',
+      'password' => 'required'
+    ];
+    $messages = [];
+    $validator = Validator::make($request->all(), $rules, $messages);
+    if ($validator->fails()) {
+      return redirect()->back()->withErrors($validator->errors());
+    }
+    if (Auth::guard('vendor')->attempt(['email' => $request->email, 'password' => $request->password])) {
+      $authAdmin = Auth::guard('vendor')->user();
+      if ($authAdmin->account_status === 0) {
+        Session::flush();
+        Session::flash('danger', 'Please wait for Admin Approvel !');
+        // Auth::guard('vendor')->logout();
+        return back();
+      }
+      if (empty($authAdmin->email_verified_at)) {
+        return  redirect('/email/verify');
+      } else {
+        return redirect()->route('vendor.event_management.event');
+        // return redirect('/vendor/dashboard');
+      }
+
+      // $setting = DB::table('basic_settings')->where('uniqid', 12345)->select('organizer_email_verification', 'organizer_admin_approval')->first();
+
+      // check whether the admin's account is active or not
+      // if ($setting->organizer_email_verification == 1 && $authAdmin->email_verified_at == NULL && $authAdmin->status == 0) {
+      // Session::flash('alert', 'Please Verify Your Email Address!');
+
+      // logout auth admin as condition not satisfied
+      // Auth::guard('organizer')->logout();
+
+      // return redirect()->back();
+      // } elseif ($setting->organizer_email_verification == 0 && $setting->organizer_admin_approval == 1) {
+      Session::put('secret_login', 0);
+    } else {
+      Session::flash('danger', 'User not found !');
+      return back();
+    }
+    // } else {
+    //   return redirect()->back()->with('alert', 'Oops, Username or password does not match!');
+    // }
+  }
+
   public function create_old(Request $request)
   {
 
@@ -225,10 +279,8 @@ class VendorController extends Controller
     return redirect()->route('vendor.login');
   }
   //authenticate
-  public function authentication(Request $request)
+  public function authentication_old(Request $request)
   {
-
-
 
     $rules = [
       'email' => 'required',

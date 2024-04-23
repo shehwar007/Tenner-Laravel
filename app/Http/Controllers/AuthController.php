@@ -34,6 +34,7 @@ class AuthController extends Controller
        
         return view('auth.verify-email');
     }
+    
     public function sendResetLinkEmail(Request $request)
     {
         $request->validate([

@@ -77,7 +77,7 @@
                       <i class="fa-regular fa-eye-slash" id="show_eye" style="display: block;"></i>
                       <i class="fa-regular fa-eye" id="hide_eye" style="display: none;"></i>
                     </span>
-                    <a class="forget-password" href="">Forgot Password</a>
+                    <a class="forget-password" href="{{route('vendor.resetPassword')}}">Forgot Password</a>
                   </div>
                 </div>
                 <div class="form-field m-0">
