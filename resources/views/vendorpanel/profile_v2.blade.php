@@ -107,7 +107,7 @@
                       <li><a href="#" data-bs-toggle="modal" data-bs-target="#promotionModal">How to make a promotion</a></li>
                       <li><a href="#">Terms and Conditions and Privacy Policy</a></li>
                       <!-- <li><a href="#">Change Password</a></li> -->
-                      <li><a href="#">Logout</a></li>
+                      <li><a href="{{route('vendor.logout')}}">Logout</a></li>
                       <!-- <li><a href="#">Delete Account</a></li> -->
                     </ul>
                   </div>
