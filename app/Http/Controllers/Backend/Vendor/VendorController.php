@@ -4,6 +4,7 @@ namespace App\Http\Controllers\BackEnd\Vendor;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
+use App\Models\EventOffer;
 use App\Models\Vendor;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
@@ -46,7 +47,18 @@ class VendorController extends Controller
   }
 
   public function store_profile_v2(Request $request){
-       dd($request->all());
+      //  dd($request->all());
+      //  if($request->profile){
+         $v= $request->only('name','phone','address');
+         $e=$request->only('offer_title','description','offer_type','old_price','new_price','discount_amount');
+         Vendor::where('id',Auth::guard('vendor')->user()->id)->update($v);
+         if($request->publish==null){
+          EventOffer::where('id',Auth::guard('vendor')->user()->EventOffer->id)->update($e);
+         }
+        
+         Session::flash('success', 'Update successfully!');
+         return back();
+      //  }
   }
 
  

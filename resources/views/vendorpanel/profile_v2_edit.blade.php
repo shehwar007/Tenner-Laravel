@@ -80,7 +80,7 @@
                     @csrf
                     <div class="form-field">
                       <label for="" class="form-label">Business Name</label>
-                      <input type="text" class="form-control" id="" value="{{Auth::guard('vendor')->user()->name}}" placeholder="Enter Business Name">
+                      <input type="text" class="form-control" name="name" value="{{Auth::guard('vendor')->user()->name}}" placeholder="Enter Business Name">
                       <span class="field-note">*50 character limit</span>
                     </div>
                     <div class="form-field">
