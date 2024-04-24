@@ -49,6 +49,11 @@ class VendorController extends Controller
   public function store_profile_v2(Request $request){
       //  dd($request->all());
       //  if($request->profile){
+        if($request->store007=="007"){
+           $e=$request->only('offer_title','description','offer_type','old_price','new_price','discount_amount');
+           $e['vendor_id']=Auth::guard('vendor')->user()->id;
+           EventOffer::Create($e);
+        }
          $v= $request->only('name','phone','address');
          $e=$request->only('offer_title','description','offer_type','old_price','new_price','discount_amount');
          Vendor::where('id',Auth::guard('vendor')->user()->id)->update($v);

@@ -101,7 +101,9 @@
               </div>
               <div class="tab-pane fade" id="tenner-promotion" role="tabpanel" aria-labelledby="tenner-promotion-tab" tabindex="0">
                 <div class="promotion">
-                  <form action="" class="site-form">
+                <form action="{{route('store.vendor.profile_v2')}}" class="site-form" method="POST">
+                    @csrf
+                    <input type="hidden" name="store007" value="007">
                     <div class="form-field">
                       <div class="form-switch-btn">
                         <label for="" class="form-label">Active/Inactive</label>
@@ -112,7 +114,7 @@
                     </div>
                     <div class="form-field">
                       <label for="" class="form-label">Promotion Title</label>
-                      <input type="text" class="form-control" id="" value="{{Auth::guard('vendor')->user()->EventOffer->offer_title ?? ''}}" placeholder="Write Promotion Title">
+                      <input type="text" name="offer_title" class="form-control" id="" value="{{Auth::guard('vendor')->user()->EventOffer->offer_title ?? ''}}" placeholder="Write Promotion Title">
                     </div>
                     <!-- <div class="form-field">
                       <label for="" class="form-label">Promotion Title</label>
@@ -121,7 +123,7 @@
                     </div> -->
                     <div class="form-field">
                       <label for="" class="form-label">Promotion Deatils</label>
-                      <textarea class="form-control" id="" placeholder="Write promotion details">{{Auth::guard('vendor')->user()->EventOffer->description ?? ''}}</textarea>
+                      <textarea class="form-control" id="" name="description" placeholder="Write promotion details">{{Auth::guard('vendor')->user()->EventOffer->description ?? ''}}</textarea>
                       <span class="field-note">*120 character limit</span>
                     </div>
                     <div class="form-field m-0">
@@ -129,17 +131,17 @@
                       <div class="payment-option">
                         <div class="payment-menu">
                           <label class="checkcontainer" for="payment-option1">Price Off
-                            <input type="radio" id="payment-option1" name="radio" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'old_new' ? 'checked' : ''}}>
+                            <input type="radio" id="payment-option1"  name="offer_type" value="old_new" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'old_new' ? 'checked' : ''}}>
                             <span class="radiobtn"></span>
                           </label>
 
                           <label class="checkcontainer" for="payment-option2">% off
-                            <input type="radio" id="payment-option2" name="radio" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'off' ? 'checked' : ''}}>
+                            <input type="radio" id="payment-option2" name="offer_type" value="off" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'off' ? 'checked' : ''}}>
                             <span class="radiobtn"></span>
                           </label>
 
                           <label class="checkcontainer" for="payment-option3">Free
-                            <input type="radio" id="payment-option3" name="radio" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'free' ? 'checked' : ''}}>
+                            <input type="radio" id="payment-option3"name="offer_type" value="free" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'free' ? 'checked' : ''}}>
                             <span class="radiobtn"></span>
                           </label>
                         </div>
@@ -148,17 +150,17 @@
                             <div class="grp-form-field">
                               <div class="form-field">
                                 <label for="" class="form-label">Orginal Price</label>
-                                <input type="text" class="form-control" value="{{Auth::guard('vendor')->user()->EventOffer->old_price ?? ''}}" id="" placeholder="Enter orginal price | $">
+                                <input type="text" class="form-control"  name="old_price" value="{{Auth::guard('vendor')->user()->EventOffer->old_price ?? ''}}" id="" placeholder="Enter orginal price | $">
                                 <span class="field-note">*3 character limit</span>
                               </div>
                               <div class="form-field">
                                 <label for="" class="form-label">New Price</label>
-                                <input type="text" class="form-control" value="{{Auth::guard('vendor')->user()->EventOffer->new_price ?? ''}}" placeholder="Enter New price | $">
+                                <input type="text" class="form-control" name="new_price" value="{{Auth::guard('vendor')->user()->EventOffer->new_price ?? ''}}" placeholder="Enter New price | $">
                                 <span class="field-note">*3 character limit</span>
                               </div>
                               <div class="form-field">
                               <label for="" class="form-label">% off</label>
-                              <input type="text" class="form-control" id="" value="{{Auth::guard('vendor')->user()->EventOffer->discount_amount ?? ''}}"  placeholder="Enter Percentage | %">
+                              <input type="text" class="form-control" name="discount_amount" value="{{Auth::guard('vendor')->user()->EventOffer->discount_amount ?? ''}}"  placeholder="Enter Percentage | %">
                               <span class="field-note">*3 character limit</span>
                             </div>
                             </div>
@@ -166,7 +168,7 @@
                           <div class="content" id="payment-content2">
                             <div class="form-field">
                               <label for="" class="form-label">% off</label>
-                              <input type="text" class="form-control" id="" value="{{Auth::guard('vendor')->user()->EventOffer->discount_amount ?? ''}}"  placeholder="Enter Percentage | %">
+                              <input type="text" class="form-control" name="discount_amount" value="{{Auth::guard('vendor')->user()->EventOffer->discount_amount ?? ''}}"  placeholder="Enter Percentage | %">
                               <span class="field-note">*3 character limit</span>
                             </div>
                           </div>
@@ -200,7 +202,8 @@
                     <div class="form-field">
                       <div class="grp-btns promotion-grp-btn">
                         <a class="site-btn border-btn" href="#" data-bs-toggle="modal" data-bs-target="#previewModal">Preview</a>
-                        <a class="site-btn bg-btn" href="#">Publish</a>
+                        <button class="site-btn bg-btn" type="submit" name="profile">Save</button>
+
                       </div>
                     </div>
                   </form>
