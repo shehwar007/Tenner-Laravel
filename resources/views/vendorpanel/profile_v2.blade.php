@@ -85,7 +85,7 @@
                       </li>
                     </ul>
                     <div class="edit-btn">
-                      <a class="site-btn bg-btn" href="edit.html">Edit</a>
+                      <a class="site-btn bg-btn" href="{{route('vendor.profile_v2_edit')}}">Edit</a>
                     </div>
                   </div>
                   <div class="user-info">

@@ -88,6 +88,8 @@ Route::prefix('/vendor')->middleware('auth:vendor', 'verified')->group(function 
   Route::get('/home_profile_edit', [VendorController::class,'profile_v2_edit'])->name('vendor.profile_v2_edit');
   Route::get('/dashboard', [VendorController::class,'index'])->name('vendor.dashboard');
 
+  Route::post('/home_profile', [VendorController::class,'store_profile_v2'])->name('store.vendor.profile_v2');
+
     
    
   Route::get('/event-offer-management/events', [EventOfferController::class,'index'])->name('vendor.event_management.event');

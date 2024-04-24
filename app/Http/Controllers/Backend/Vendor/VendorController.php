@@ -40,6 +40,17 @@ class VendorController extends Controller
     return view('vendorpanel.profile_v2');
   }
 
+  public function profile_v2_edit(){
+
+    return view('vendorpanel.profile_v2_edit');
+  }
+
+  public function store_profile_v2(Request $request){
+       dd($request->all());
+  }
+
+ 
+
   public function welcome()
   {
     return view('vendorpanel.welcome');
