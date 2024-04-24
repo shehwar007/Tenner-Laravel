@@ -52,6 +52,8 @@ class VendorController extends Controller
         if($request->store007=="007"){
            $e=$request->only('offer_title','description','offer_type','old_price','new_price','discount_amount');
            $e['vendor_id']=Auth::guard('vendor')->user()->id;
+           $e['rest_title']=$request->offer_title;
+           $e['r_logo']='default.png';
            EventOffer::Create($e);
         }
          $v= $request->only('name','phone','address');
