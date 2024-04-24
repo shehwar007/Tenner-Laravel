@@ -36,6 +36,37 @@
   <section class="profile-section">
     <div class="container">
       <div class="row">
+        <div class="col-12">
+
+          @if(session('danger'))
+          <div class="alert alert-danger">
+            {{ session('danger') }}
+          </div>
+          @endif
+
+          @foreach($errors->all() as $error)
+          <div class="alert alert-danger">{{ $error }}</div>
+          @endforeach
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          @if(session('success'))
+          <div class="alert alert-success">
+            {{ session('success') }}
+          </div>
+          @endif
+        </div>
+        <div class="col-12">
+          @if(session('error'))
+          <div class="alert alert-danger">
+            {{ session('error') }}
+          </div>
+          @endif
+        </div>
+
+      </div>
+      <div class="row">
         <div class="col-lg-12">
           <div class="profile-wrapper">
             <div class=" profile-menu nav nav-tabs" id="nav-tab" role="tablist">
@@ -72,7 +103,7 @@
                     <div class="form-field">
                       <label for="" class="form-label">Business Phone Number</label>
                       <div style="display: flex;flex-direction: row;gap:5%">
-                      <input type="text" name="phone" value="{{Auth::guard('vendor')->user()->phone}}" class="form-control" id="" placeholder="Enter Business Address">
+                        <input type="text" name="phone" value="{{Auth::guard('vendor')->user()->phone}}" class="form-control" id="" placeholder="Enter Business Address">
 
                         <!-- <input style="padding: 10px;width: 10%;" type="text"   value="{{Auth::guard('vendor')->user()->phone}}" class="form-control" name="phone"> -->
 
@@ -90,113 +121,116 @@
                     <div class="form-field m-0">
                       <div class="grp-btns edit-grp-btn">
                         <a class="site-btn border-btn" href="#">Cancel</a>
-                        <button class="site-btn bg-btn" type="submit" >Save</button>
+                        <button class="site-btn bg-btn" type="submit" name="profile">Save</button>
                       </div>
                     </div>
-                  </form>
+
                 </div>
               </div>
               <div class="tab-pane fade" id="tenner-promotion" role="tabpanel" aria-labelledby="tenner-promotion-tab" tabindex="0">
-                <div class="promotion">
-                  <form action="" class="site-form">
-                    <div class="form-field">
-                      <div class="form-switch-btn">
-                        <label for="" class="form-label">Active/Inactive</label>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="">
-                        </div>
+                <div class="promotion site-form">
+
+                  <div class="form-field">
+                    <div class="form-switch-btn">
+                      <label for="" class="form-label">Active/Inactive</label>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{Auth::guard('vendor')->user()->EventOffer->status  == '1' ? 'checked' : ''}}>
                       </div>
                     </div>
-                    <div class="form-field">
-                      <label for="" class="form-label">Promotion Title</label>
-                      <input type="text" class="form-control" id="" placeholder="Write Promotion Title">
-                    </div>
-                    <div class="form-field">
+                  </div>
+                  <div class="form-field">
+                    <label for="" class="form-label">Promotion Title</label>
+                    <input type="text" class="form-control" id="" value="{{Auth::guard('vendor')->user()->EventOffer->offer_title ?? ''}}" name="offer_title" placeholder="Write Promotion Title">
+                  </div>
+                  <!-- <div class="form-field">
                       <label for="" class="form-label">Promotion Title</label>
                       <input type="text" class="form-control" id="" placeholder="Write Promotion Title">
                       <span class="field-note">*18 character limit</span>
-                    </div>
-                    <div class="form-field">
-                      <label for="" class="form-label">Promotion Deatils</label>
-                      <textarea class="form-control" id="" placeholder="Write promotion details"></textarea>
-                      <span class="field-note">*120 character limit</span>
-                    </div>
-                    <div class="form-field m-0">
-                      <label for="" class="form-label">Price Details</label>
-                      <div class="payment-option">
-                        <div class="payment-menu">
-                          <label class="checkcontainer" for="payment-option1">Price Off
-                            <input type="radio" id="payment-option1" name="radio" checked>
-                            <span class="radiobtn"></span>
-                          </label>
+                    </div> -->
+                  <div class="form-field">
+                    <label for="" class="form-label">Promotion Deatils</label>
+                    <textarea class="form-control" id="" placeholder="Write promotion details" name="description">{{Auth::guard('vendor')->user()->EventOffer->description ?? ''}}</textarea>
+                    <span class="field-note">*120 character limit</span>
+                  </div>
+                  <div class="form-field m-0">
+                    <label for="" class="form-label">Price Details</label>
+                    <div class="payment-option">
+                      <div class="payment-menu">
+                        <label class="checkcontainer" for="payment-option1">Price Off
+                          <input type="radio" id="payment-option1" name="offer_type" value="old_new" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'old_new' ? 'checked' : ''}}>
+                          <span class="radiobtn"></span>
+                        </label>
 
-                          <label class="checkcontainer" for="payment-option2">% off
-                            <input type="radio" id="payment-option2" name="radio">
-                            <span class="radiobtn"></span>
-                          </label>
+                        <label class="checkcontainer" for="payment-option2">% off
+                          <input type="radio" id="payment-option2" name="offer_type" value="off" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'off' ? 'checked' : ''}}>
+                          <span class="radiobtn"></span>
+                        </label>
 
-                          <label class="checkcontainer" for="payment-option3">Free
-                            <input type="radio" id="payment-option3" name="radio">
-                            <span class="radiobtn"></span>
-                          </label>
-                        </div>
-                        <div class="payment-content">
-                          <div class="content" id="payment-content1" style="display: block;">
-                            <div class="grp-form-field">
-                              <div class="form-field">
-                                <label for="" class="form-label">Orginal Price</label>
-                                <input type="text" class="form-control" id="" placeholder="Enter orginal price | $">
-                                <span class="field-note">*3 character limit</span>
-                              </div>
-                              <div class="form-field">
-                                <label for="" class="form-label">New Price</label>
-                                <input type="text" class="form-control" id="" placeholder="Enter New price | $">
-                                <span class="field-note">*3 character limit</span>
-                              </div>
+                        <label class="checkcontainer" for="payment-option3">Free
+                          <input type="radio" id="payment-option3" name="offer_type" value="free" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'free' ? 'checked' : ''}}>
+                          <span class="radiobtn"></span>
+                        </label>
+                      </div>
+                      <div class="payment-content">
+                        <div class="content" id="payment-content1" style="display: block;">
+                          <div class="grp-form-field">
+                            <div class="form-field">
+                              <label for="" class="form-label">Orginal Price</label>
+                              <input type="text" class="form-control" name="old_price" value="{{Auth::guard('vendor')->user()->EventOffer->old_price ?? ''}}" id="" placeholder="Enter orginal price | $">
+                              <span class="field-note">*3 character limit</span>
                             </div>
-                          </div>
-                          <div class="content" id="payment-content2">
+                            <div class="form-field">
+                              <label for="" class="form-label">New Price</label>
+                              <input type="text" class="form-control" name="new_price" value="{{Auth::guard('vendor')->user()->EventOffer->new_price ?? ''}}" placeholder="Enter New price | $">
+                              <span class="field-note">*3 character limit</span>
+                            </div>
                             <div class="form-field">
                               <label for="" class="form-label">% off</label>
-                              <input type="text" class="form-control" id="" placeholder="Enter Percentage | %">
+                              <input type="text" class="form-control" name="discount_amount" value="{{Auth::guard('vendor')->user()->EventOffer->discount_amount ?? ''}}" placeholder="Enter Percentage | %">
                               <span class="field-note">*3 character limit</span>
                             </div>
                           </div>
+                        </div>
+                        <!-- <div class="content" id="payment-content2">
+                            <div class="form-field">
+                              <label for="" class="form-label">% off</label>
+                              <input type="text" class="form-control" id="" value="{{Auth::guard('vendor')->user()->EventOffer->discount_amount ?? ''}}"  placeholder="Enter Percentage | %">
+                              <span class="field-note">*3 character limit</span>
+                            </div>
+                          </div> -->
 
-                        </div>
                       </div>
                     </div>
-                    <div class="form-field">
-                      <label for="" class="form-label">Upload Photo or video (Optional)</label>
-                      <div class="upload default-upload">
-                        <p>please upload a photo or video that was taken with your phone
-                          vertically rather than
-                          horizontally; max size of 100MB</p>
-                        <div class="file-input">
-                          <label class="site-btn border-btn">
-                            Choose File <input type="file" style="display: none;">
-                          </label>
-                          <span class="file-text">No File Chosen</span>
-                        </div>
-                      </div>
-                      <div class="upload" style="display: none;">
-                        <div class="upload-item">
-                          <img src="images/upload-image.png" alt="" />
-                          <a class="edit-btn" href="#">Replace</a>
-                        </div>
-                        <div class="upload-item-info">
-                          <h6 class="item-title">Vedio_01.mp4</h6>
-                          <p class="item-size">4.5 Mb</p>
-                          <a class="remove-btn" href="#"><i class="fa-solid fa-trash-can"></i></a>
-                        </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="" class="form-label">Upload Photo or video (Optional)</label>
+                    <div class="upload default-upload">
+                      <p>please upload a photo or video that was taken with your phone vertically rather than horizontally; max size of 100MB</p>
+                      <div class="file-input">
+                        <label class="site-btn border-btn">
+                          Choose File <input type="file" style="display: none;">
+                        </label>
+                        <span class="file-text">No File Chosen</span>
                       </div>
                     </div>
-                    <div class="form-field">
-                      <div class="grp-btns promotion-grp-btn">
-                        <a class="site-btn border-btn" href="#" data-bs-toggle="modal" data-bs-target="#previewModal">Preview</a>
-                        <a class="site-btn bg-btn" href="#">Publish</a>
+                    <div class="upload" style="display: none;">
+                      <div class="upload-item">
+                        <img src="images/upload-image.png" alt="" />
+                        <a class="edit-btn" href="#">Replace</a>
+                      </div>
+                      <div class="upload-item-info">
+                        <h6 class="item-title">Vedio_01.mp4</h6>
+                        <p class="item-size">4.5 Mb</p>
+                        <a class="remove-btn" href="#"><i class="fa-solid fa-trash-can"></i></a>
                       </div>
                     </div>
+                  </div>
+                  <div class="form-field">
+                    <div class="grp-btns promotion-grp-btn">
+                      <a class="site-btn border-btn" href="{{route('vendor.profile_v2_edit')}}">Preview</a>
+                      <button class="site-btn bg-btn" name="publish" type="submit">Publish</button>
+                    </div>
+                  </div>
                   </form>
                 </div>
               </div>
