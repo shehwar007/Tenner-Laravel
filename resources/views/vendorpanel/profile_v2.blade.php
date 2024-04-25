@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="header-wrapper">
-            <div class="header-logo"><a href="{{route('vendor.welcome')}}"><img src="{{ asset('assets2/images/logo.png')}}" alt="site logo"></a></div>
+            <div class="header-logo"><a href="{{route('vendor.profile_v2')}}"><img src="{{ asset('assets2/images/logo.png')}}" alt="site logo"></a></div>
             <div class="header-btn"><a class="contact-btn" href="#">Contact Us</a></div>
           </div>
         </div>

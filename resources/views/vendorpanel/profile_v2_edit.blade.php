@@ -76,7 +76,7 @@
             <div class="profile-content tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                 <div class="edit-profile">
-                  <form action="{{route('store.vendor.profile_v2')}}" class="site-form" method="POST">
+                  <form action="{{route('store.vendor.profile_v2')}}" class="site-form" method="POST"  enctype="multipart/form-data">
                     @csrf
                     <div class="form-field">
                       <label for="" class="form-label">Business Name</label>
@@ -93,9 +93,9 @@
                           <p class="note">Please upload an image, Max size of 100MB</p>
                           <div class="file-input">
                             <label class="site-btn">
-                              Choose File <input type="file" name="logo" style="display: none;">
+                             <input type="file" name="logo">
                             </label>
-                            <span class="file-text">No File Chosen</span>
+                          
                           </div>
                         </div>
                       </div>

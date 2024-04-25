@@ -57,6 +57,16 @@ class VendorController extends Controller
            EventOffer::Create($e);
         }
          $v= $request->only('name','phone','address');
+         $file = $request->file('logo');
+       
+         if ($file) {
+           $extension = $file->getClientOriginalExtension();
+           $directory = public_path('assets/admin/img/vendor-photo/');
+           $fileName = uniqid() . '.' . $extension;
+           @mkdir($directory, 0775, true);
+           $file->move($directory, $fileName);
+           $v['logo'] = $fileName;
+         }
          $e=$request->only('offer_title','description','offer_type','old_price','new_price','discount_amount');
          
          Vendor::where('id',Auth::guard('vendor')->user()->id)->update($v);
