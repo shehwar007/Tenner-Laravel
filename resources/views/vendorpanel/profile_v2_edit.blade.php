@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="header-wrapper">
-            <div class="header-logo"><a href="{{route('vendor.welcome')}}"><img src="{{ asset('assets2/images/logo.png')}}" alt="site logo"></a></div>
+            <div class="header-logo"><a href="{{route('vendor.profile_v2')}}"><img src="{{ asset('assets2/images/logo.png')}}" alt="site logo"></a></div>
             <div class="header-btn"><a class="contact-btn" href="#">Contact Us</a></div>
           </div>
         </div>
@@ -134,7 +134,7 @@
                     <div class="form-switch-btn">
                       <label for="" class="form-label">Active/Inactive</label>
                       <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{Auth::guard('vendor')->user()->EventOffer->status  == '1' ? 'checked' : ''}}>
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" {{Auth::guard('vendor')->user()->EventOffer->status ?? ''  == '1' ? 'checked' : ''}}>
                       </div>
                     </div>
                   </div>
@@ -157,17 +157,17 @@
                     <div class="payment-option">
                       <div class="payment-menu">
                         <label class="checkcontainer" for="payment-option1">Price Off
-                          <input type="radio" id="payment-option1" name="offer_type" value="old_new" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'old_new' ? 'checked' : ''}}>
+                          <input type="radio" id="payment-option1" name="offer_type" value="old_new" {{Auth::guard('vendor')->user()->EventOffer->offer_type ?? ''  == 'old_new' ? 'checked' : ''}}>
                           <span class="radiobtn"></span>
                         </label>
 
                         <label class="checkcontainer" for="payment-option2">% off
-                          <input type="radio" id="payment-option2" name="offer_type" value="off" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'off' ? 'checked' : ''}}>
+                          <input type="radio" id="payment-option2" name="offer_type" value="off" {{Auth::guard('vendor')->user()->EventOffer->offer_type ?? ''  == 'off' ? 'checked' : ''}}>
                           <span class="radiobtn"></span>
                         </label>
 
                         <label class="checkcontainer" for="payment-option3">Free
-                          <input type="radio" id="payment-option3" name="offer_type" value="free" {{Auth::guard('vendor')->user()->EventOffer->offer_type  == 'free' ? 'checked' : ''}}>
+                          <input type="radio" id="payment-option3" name="offer_type" value="free" {{Auth::guard('vendor')->user()->EventOffer->offer_type ?? ''  == 'free' ? 'checked' : ''}}>
                           <span class="radiobtn"></span>
                         </label>
                       </div>

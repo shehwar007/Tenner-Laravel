@@ -61,7 +61,7 @@ Route::get('check', function (){
 
 
   Route::middleware('guest:vendor')->group(function () {
-    Route::get('/welcome', [VendorController::class,'welcome'])->name('vendor.welcome');;
+    Route::get('/welcome', [VendorController::class,'welcome'])->name('vendor.welcome');
     Route::get('/login', [VendorController::class,'login'])->name('vendor.login');
     Route::get('/reset-password', [VendorController::class,'resetPassword'])->name('vendor.resetPassword');
     // Route::get('/email_verfication', [VendorController::class,'email_verfication'])->name('vendor.email_verfication');

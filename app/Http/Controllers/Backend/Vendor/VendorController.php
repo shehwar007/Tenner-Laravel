@@ -58,9 +58,15 @@ class VendorController extends Controller
         }
          $v= $request->only('name','phone','address');
          $e=$request->only('offer_title','description','offer_type','old_price','new_price','discount_amount');
+         
          Vendor::where('id',Auth::guard('vendor')->user()->id)->update($v);
          if($request->publish==null){
-          EventOffer::where('id',Auth::guard('vendor')->user()->EventOffer->id)->update($e);
+          if(Auth::guard('vendor')->user()->EventOffer->id){
+            EventOffer::where('id',Auth::guard('vendor')->user()->EventOffer->id)->update($e);
+          }else{
+            Session::flash('error', 'Kindly Publish your Tenner Promotion');
+          }
+         
          }
         
          Session::flash('success', 'Update successfully!');
