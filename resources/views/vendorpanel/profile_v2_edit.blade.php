@@ -208,7 +208,7 @@
                       <p>please upload a photo or video that was taken with your phone vertically rather than horizontally; max size of 100MB</p>
                       <div class="file-input">
                         <label class="site-btn border-btn">
-                          Choose File <input type="file" style="display: none;">
+                          Choose File <input type="file" name="r_logo">
                         </label>
                         <span class="file-text">No File Chosen</span>
                       </div>
