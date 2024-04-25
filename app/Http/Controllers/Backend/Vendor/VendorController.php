@@ -71,7 +71,7 @@ class VendorController extends Controller
          
          Vendor::where('id',Auth::guard('vendor')->user()->id)->update($v);
          if($request->publish==null){
-          if(Auth::guard('vendor')->user()->EventOffer->id){
+          if(isset(Auth::guard('vendor')->user()->EventOffer->id)){
             EventOffer::where('id',Auth::guard('vendor')->user()->EventOffer->id)->update($e);
           }else{
             Session::flash('error', 'Kindly Publish your Tenner Promotion');
